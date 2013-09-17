@@ -116,6 +116,7 @@ var BootstrapDialog = null;
 			if (this.getTitle() == null) {
 				$header.hide();
 			}else{
+				$header.append('<button data-dismiss="modal" class="close">&times;</button>');
 				$header.append(this.createDynamicContent(this.getTitle()));
 			}
 			
